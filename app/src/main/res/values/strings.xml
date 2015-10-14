@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">tvAAC</string>
+    <string name="descricao">Televisão da Associação Académica de Coimbra</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_section1">Notícias</string>
+    <string name="title_section2">Videos</string>
+    <string name="title_section3">Programas</string>
+    <string name="title_section4">Sobre Nós</string>
+    <string name="title_section5">Informações</string>
+    <string name="failed">Failed to load Youtube</string>
+    <string name="telefone">Telefonar</string>
+    <string name="mail">Enviar email</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

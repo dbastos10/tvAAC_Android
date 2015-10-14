@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dbastos.tvaac.SobreNos_Frag"
+    android:background="#000000">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text="\tA tvAAC (Televisão da Associação Académica de Coimbra), secção da AAC desde 2003, conta actualmente com um variado leque de programas e de produções. Sendo uma televisão de, e para, estudantes.
+            \n\n\tPara além da linha de programação que tem vindo a ser desenvolvida (tanto a nível da informação como do entretenimento), destacam-se também os workshops e acções de formação (abordando temas como a linguagem audiovisual, a edição não-linear, o jornalismo televisivo, a realização multi-câmara).
+            \n\n\tA nível dos programas, estes encontram-se subdivididos entre vários departamentos. O departamento de Informação é o responsável pela produção do Conversas de Café. Neste programa iremos estar à conversa com elementos das várias Secções Culturais , Desportivas, Direcção Geral e todas as pessoas que dia após dia fazem a AAC acontecer. Este departamento está também presente em todas as Festas das Latas e Queimas das Fitas, através de VoxPops informativos. Os departamentos de Programação e Produção são os responsáveis pelos restantes programas. Neste sector encontram-se programas com várias temáticas:
+            \n\n\t\tDesporto;\n\t\tCultura;\n\t\tComédia;\n\t\tJogos;\n\t\tNoite de Coimbra.
+            \n\n\tHá também outras actividades organizadas pela nossa secção, como:
+            \n\t\tTransmissão das Assembleias Magnas;\n\tEmissões Especiais – Como por exemplo a transmissão de Festivais de Tunas, ou a transmissão de palestras;\n\t\t“Mãe estou na Tv” – Presente em todas as Queimas e Festa das Latas;\n\t\tPDL – Presente em todas as Queimas e Festa das Latas.
+            \n\n\tAos nossos colaboradores e sócios é dada também a possibilidade de participarem no departamento de Administração (responsável pela parte mais logística da tvAAC), ou no departamento da Técnica, que gere a parte funcional, tornando possível a realização de todos os conteúdos da nossa secção. Convém ainda salientar que a tvAAC tem como principais objectivos:
+            \n\t\tDifusão de informação relativa à academia e à realidade local, regional, nacional e internacional;\n\t\tDivulgação, análise e formação dos sócios no domínio da arte e técnica audiovisual;\n\t\tProdução de audiovisuais gerais e de índole pedagógico-didática.
+            \n\n\tTodos os nossos conteúdos encontram-se visíveis no nosso circuito interno (através de televisões espalhadas pelo edifício da AAC e com possível expansão ás cantinas e aos vários departamentos da UC), estando também disponíveis no nosso site, em tv.aac.uc.pt."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+    </ScrollView>
+
+</FrameLayout>
