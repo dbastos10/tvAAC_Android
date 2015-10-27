@@ -1,6 +1,7 @@
 package dbastos.tvaac;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,11 +9,22 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import dbastos.tvaac.adapter.RecentVideosAdapter;
+import dbastos.tvaac.config.Links;
+import dbastos.tvaac.task.BaseTask;
 
 
 /**
@@ -30,6 +42,8 @@ public class Videos_Frag extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     public static final String API_KEY = "AIzaSyDJrm2uOs_wKNu8CfQ5E6W44ar8IKtO8lU";
     View myview;
+
+    private RecentVideosAdapter videosAdapter;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -71,9 +85,19 @@ public class Videos_Frag extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         myview = inflater.inflate(R.layout.fragment_videos, container, false);
-        playYoutube("zYqfbC-ClH4");
+
+        videosAdapter = new RecentVideosAdapter(getContext(), R.layout.item_list_videos_fragment);
+
+        ListView list = (ListView) myview.findViewById(R.id.listView);
+        list.setAdapter(videosAdapter);
+
+        BaseTask task = new BaseTask(Links.RECENT_VIDEOS, videosAdapter);
+        task.execute();
+
+        //playYoutube("zYqfbC-ClH4");
         return myview;
     }
 
@@ -136,5 +160,7 @@ public class Videos_Frag extends Fragment {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
+
+
 
 }
