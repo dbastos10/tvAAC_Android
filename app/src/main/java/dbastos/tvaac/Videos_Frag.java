@@ -97,7 +97,6 @@ public class Videos_Frag extends Fragment {
         BaseTask task = new BaseTask(Links.RECENT_VIDEOS, videosAdapter);
         task.execute();
 
-        //playYoutube("zYqfbC-ClH4");
         return myview;
     }
 
